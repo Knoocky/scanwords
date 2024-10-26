@@ -1,0 +1,49 @@
+.scanword-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 60px);
+  gap: 5px;
+}
+
+.scanword-row {
+  display: contents;
+}
+
+.scanword-cell {
+  position: relative; /* Для позиционирования вопроса и стрелок */
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.scanword-input:focus {
+  background-color: #e0f7fa;
+}
+
+.question-mark {
+  font-size: 14px;
+  color: #007bff;
+  text-align: center;
+  cursor: pointer; /* Указатель на возможность клика */
+}
+
+.highlight {
+  border: 3px solid #ffeb3b;
+}
+
+.current-cell {
+  background: #ffeb3b;
+}
+
+.letter-cell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
